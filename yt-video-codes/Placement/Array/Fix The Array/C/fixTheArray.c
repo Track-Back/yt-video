@@ -41,6 +41,8 @@ void arrangeSubArray(int *arr, int n) {
     while(maxOutOfOrder <= arr[end]) {
         end--;
     }
+
+    // here index starts from 0
     printf("%d %d", start, end);
 }
 
@@ -58,3 +60,16 @@ int main() {
     arrangeSubArray(arr, n);
     return 0;
 }
+
+// problem
+
+// write a function that takes in an array of atleast two integers and that returns an array of th starting and ending indices of the smallest subarray in the input array that needs to be sorted in  place in order for the entire input array to be sorted.
+// if the input array is already sorted, the function should return -1 -1.
+
+// input:
+// 13
+// 1 2 4 7 10 11 7 12 6 7 16 18 19
+
+// output:
+
+// 3 9
